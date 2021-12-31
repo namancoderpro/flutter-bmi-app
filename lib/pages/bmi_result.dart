@@ -81,7 +81,9 @@ class _bmiResultState extends State<bmiResult> {
               width: 350,
               height: 50,
               child: ElevatedButton.icon(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamedAndRemoveUntil(context,'/home',(_) => false);  
+                },
                 icon: Icon(Icons.restart_alt),
                 label: Text('Start Over'),
               ),
